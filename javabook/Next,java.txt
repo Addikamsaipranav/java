@@ -1,0 +1,26 @@
+import java.io.*;
+class Next
+{
+ public static void main(String args[]) throws IOException
+ {
+  BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+  int a[][]=new int[3][3];
+     for(int i=0;i<3;i++)
+      {
+       System.out.println("enter the marks of student :"+i);
+       for(int j=0;j<3;j++)
+        { System.out.println("test:"+j);
+          a[i][j]=int.parseFloat(br.readLine()); 
+        }
+      }
+  
+    for(int i=0;i<3;i++)
+     {
+      for(int j=0;j<3;j++)
+      {     
+        System.out.println(a[i][j]+"  ");
+      }
+     System.out.println();
+    }
+  }
+}

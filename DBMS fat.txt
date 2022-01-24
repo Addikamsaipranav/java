@@ -1,0 +1,11 @@
+SET SERVEROUTPUT ON;
+
+DECLARE
+  a number(3) := 100;
+    BEGIN
+        WHILE a >0 LOOP
+         dbms_output.put_line('value of a: ' || a);
+    a := a - 1;
+    END LOOP;
+    end;
+    /
